@@ -73,6 +73,8 @@ define(function() {
     },
 
     prepend : function(arr, item) {
+
+      // arr.unshift has same effect - add item to beginning of arr
       var newArray = [];
       newArray.push(item);
       arr.forEach(function(element){
@@ -86,6 +88,7 @@ define(function() {
     },
 
     curtail : function(arr) {
+      // arr.shift - remove first item in array
       var newArray = [];
       for (var i= 1; i < arr.length; i++) {
         newArray.push(arr[i]);
@@ -128,7 +131,8 @@ define(function() {
 //This one had me stumped. Will have to revisit to study.
     duplicates : function(arr) {
 
-
+// Makes an object that holds array elements as keys and numbers as values. If 
+//the value is greater than 1 then push to dupes obj
     var seen = {};
     var dupes = [];
 

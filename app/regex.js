@@ -62,6 +62,8 @@ define(function() {
     },
 
     captureThreeNumbers : function(str) {
+        //.exec is a method that lives on a pattern or regular expression and takes strings as input to search for a match
+        //(/\d{3}/) is like saying any 3 numbers if you change the {} to 4 then it's any 4 numbers
         var matches = (/\d{3}/).exec(str);
         return matches ? matches[0] : false;
     },

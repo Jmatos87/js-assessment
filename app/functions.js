@@ -34,7 +34,7 @@ define(function() {
     return functionArr;
 
     },
-
+    //Only needs one argument but really has 3 that work with the user's original argument
     partial : function(fn, str1, str2) {
         return function(userInput){
             return fn(str1,str2,userInput)
